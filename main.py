@@ -15,15 +15,9 @@ GPIO.remove_event_detect(btn_input)
 def buttonEventHandler_rising (pin):
     # turn LED on
     GPIO.output(LED_output,True)
-    
-def buttonEventHandler_falling (pin):
-    # turn LED off
-    GPIO.output(LED_output,False)
-
 
 	
 GPIO.add_event_detect(btn_input, GPIO.RISING, callback=buttonEventHandler_rising, bouncetime=100) 
-GPIO.add_event_detect(btn_input, GPIO.FALLING, callback=buttonEventHandler_falling, bouncetime=100)
  
 try:  
     while True : pass  
