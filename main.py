@@ -2,6 +2,8 @@ import time
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 
+GPIO.cleanup()
+
 btn_input = 20;
 LED_output = 21;
 
