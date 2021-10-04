@@ -1,5 +1,6 @@
 import time
 import RPi.GPIO as GPIO
+GPIO.cleanup()
 GPIO.setmode(GPIO.BCM)
 
 btn_input = 20;
