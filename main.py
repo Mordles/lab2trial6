@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 
 btn_input = 4;
-LED_output = 17;
+LED_output = 26;
 
 # GPIO btn_input set up as input.
 GPIO.setup(btn_input, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
