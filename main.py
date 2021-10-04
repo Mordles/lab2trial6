@@ -17,7 +17,4 @@ def buttonEventHandler_rising (pin):
 	
 GPIO.add_event_detect(btn_input, GPIO.RISING, callback=buttonEventHandler_rising, bouncetime=100) 
  
-try:  
-    while True : pass  
-except:
-    GPIO.cleanup()      
+    
