@@ -7,7 +7,7 @@ LED_output = 17;
 
 # GPIO btn_input set up as input.
 GPIO.setup(btn_input, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-GPIO.setup(LED_output, GPIO.OUT)
+GPIO.setup(LED_output, GPIO.OUT, initial=0)
 
 # handle the button event
 def buttonEventHandler_rising (pin):
