@@ -6,7 +6,7 @@ btn_input = 4;
 LED_output = 17;
 
 # GPIO btn_input set up as input.
-GPIO.setup(btn_input, GPIO.IN)
+GPIO.setup(btn_input, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(LED_output, GPIO.OUT)
 
 # handle the button event
